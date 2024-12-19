@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.bundle.js"></script>
+
+  <link rel="shortcut icon" href="images/logo (1).png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- outer start -->
+  <div class="container-fluid bg-img2">
+    <!-- nav start -->
+    <div class="row sticky-top">
+      <div class="col-sm-12 p-0">
+        <nav class="my-nav navbar navbar-expand-lg menu">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo (1).png" alt="logo" class="img-fluid"
+                width="200px" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="col-sm-6 pt-2 pe-3">
+                <form class="form-group">
+                  <input type="search" class="form-control  text-light shadow-none" placeholder="Search" />
+                </form>
+              </div>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-light fw-bold fs-6" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" data-bs-toggle="modal" data-bs-target="#loginModal"
+                    data-bs-whatever="@getbootstrap">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="#" data-bs-toggle="modal"
+                    data-bs-target="#registerModal" data-bs-whatever="@getbootstrap">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- nav send -->
+
+    <!-- modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-card">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="text-center">
+            <img src="images/logo (1).png" alt="title" class="img-fluid pt-1" width="200" />
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="">
+                <label for="recipient-name" class="col-form-label">Moblie No./ Email ID</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Enter Moblie No./Email ID" />
+              </div>
+              <div class="mb-3">
+                <label for="imputpassword" class="col-form-label">Password</label>
+                <input type="text" class="form-control" id="inputpassword" placeholder="Enter Password" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-between">
+                <span><input type="checkbox" /> Stay Logged In</span>
+                <span><a href="#" class="text-decoration-none">Forget Password?</a></span>
+              </div>
+              <div class="mb-3 text-center">
+                <input type="button" value="Login" class="btn btn-dark w-50" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <span>New To Shaadi?
+                  <a href="#" class="text-decoration-none">Sign UP</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-card">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter User Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="gender" class="form-label">Gender</label>
+                <select name="" id="" class="form-control">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputemail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputemail" placeholder="Enter email" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputnumber" class="form-label">Phone No.</label>
+                <input type="number" class="form-control" id="inputnumber" placeholder="Enter Phone No." />
+              </div>
+              <div class="col-md-6">
+                <label for="inputpassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputpassword" placeholder="Enter Password" />
+              </div>
+              <div class="col-md-6">
+                <label for="confirmpassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Enter confirm Password" />
+              </div>
+              <label for="gender" class="form-label">Date Of Birth</label>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>2024</option>
+                  <option>2023</option>
+                  <option>2022</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                  <option>2005</option>
+                  <option>2004</option>
+                  <option>2003</option>
+                  <option>2002</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>JAN</option>
+                  <option>FEB</option>
+                  <option>MAR</option>
+                  <option>APR</option>
+                  <option>MAY</option>
+                  <option>JUN</option>
+                  <option>JUL</option>
+                  <option>AUG</option>
+                  <option>SEP</option>
+                  <option>OCT</option>
+                  <option>NOV</option>
+                  <option>DEC</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                </select>
+              </div>
+
+              <div class="mb-3 text-center">
+                <input type="button" value="Register" class="btn btn-dark w-50" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <span>Already Register
+                  <a href="#" class="text-decoration-none">Sign In</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal register end -->
+
+    <!-- slider start -->
+    <div class="row">
+      <div class="col-sm-12 p-0">
+        <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img src="images/slide.jpg" alt="slide1" height="650" width="100%" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide2.jpg" alt="slide1" height="650" width="100%" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide3.jpg" alt="slide1" height="650" width="100%" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/slid3.jpg" alt="slide1" height="650" width="100%" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- slider end -->
+
+    <!-- reg start -->
+    <div class="row bg-img pb-3">
+      <div class="col-sm-10 mx-auto">
+        <div class="text-center py-3">
+          <h2 class="text-pink fw-bold">
+            Trusted Matrimony & Matchmaking Service
+          </h2>
+          <span class="divider">
+            <span><i class="fa-solid fa-heart text-pink"></i></span>
+          </span>
+        </div>
+        <div class="row menu py-4 ps-5">
+          <div class="col-sm-2">
+            <span class="text-light fs-5 ps-3">I'm looking for a</span>
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option>Women</option>
+                <option>Men</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <span class="text-light fs-5 ps-3">aged</span>
+            <div class="form-group d-flex">
+              <select name="" id="" class="form-control">
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+              </select>
+              <span class="px-2 text-light fw-bold">to</span>
+              <select name="" id="" class="form-control">
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <span class="text-light fs-5 ps-3">of religion</span>
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option>Hindu</option>
+                <option>Muslim</option>
+                <option>Sikh</option>
+                <option>Jain</option>
+                <option>Parsi</option>
+                <option>Buddhist</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <span class="text-light fs-5 ps-3">of religion</span>
+            <div class="form-group">
+              <select name="" id="" class="form-control">
+                <option>Hindi</option>
+                <option>English</option>
+                <option>Marathi</option>
+                <option>Punjabi</option>
+                <option>Bangali</option>
+                <option>Gujrati</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pt-4">
+              <a href="#" class="btn btn-primary mt-1">Let's Begin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reg end -->
+
+    <!-- card start -->
+    <div class="row">
+      <div class="col-sm-10 mx-auto">
+        <div class="row py-3 pb-5">
+          <div class="text-center py-3">
+            <h2 class="text-pink fw-bold">Services</h2>
+            <span class="divider">
+              <span><i class="fa-solid fa-heart text-pink"></i></span>
+            </span>
+          </div>
+          <div class="col-sm-12">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card text-center bg-card">
+                  <img src="images/ring.png" class="mx-auto pt-4" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card">
+                  <img src="images/ring.png" class="mx-auto pt-4" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card">
+                  <img src="images/ring.png" class="mx-auto pt-4" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card">
+                  <img src="images/ring.png" class="mx-auto pt-4" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- how it work -->
+    <div class="row bg-light py-4">
+      <div class="text-center">
+        <div class="text-center">
+          <h6 class="text-pink fs-4">How it Works</h6>
+          <span class="divider">
+            <span><i class="fa-solid fa-heart text-pink"></i></span>
+          </span>
+        </div>
+
+        <h1 class="fw-bold fs-1">Find Your Partner In Just Few Steps</h1>
+        <h1 class="fs-6">
+          Marthoma Matrimony will help you find your perfect match with just a
+          few steps. You focus on what is most important to you, we do all the
+          work.
+        </h1>
+      </div>
+
+      <div class="col-sm-10 mx-auto py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card rounded-circle text-center w-25 h-70 shadow-lg mx-auto">
+              <i class="fa-solid fa-clipboard fs-1 py-4 text-pink"></i>
+            </div>
+            <div class="card-title text-center py-3">
+              <h5>Register Here</h5>
+            </div>
+            <div class="card-title text-center">
+              <p>
+                Register to our website, fill up your profile completely, and
+                put a beautiful image on your profile.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card rounded-circle text-center w-25 h-70 shadow-lg mx-auto">
+              <i class="fa-solid fa-magnifying-glass fs-1 py-4 text-pink"></i>
+            </div>
+            <div class="card-title text-center py-3">
+              <h5>Find Your Partner</h5>
+            </div>
+            <div class="card-title text-center">
+              <p>
+                Search your interests that you like. You'll also be
+                recommended users based on your preferences.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card rounded-circle text-center w-25 h-70 shadow-lg mx-auto">
+              <i class="fa-brands fa-connectdevelop fs-1 py-4 text-pink"></i>
+            </div>
+            <div class="card-title text-center py-3">
+              <h5>Connect</h5>
+            </div>
+            <div class="card-title text-center">
+              <p>
+                Add friends, approach them, and chat with them. Be sure to
+                share your audio, photo, and video too.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- how it work end -->
+
+    <!-- success story -->
+    <div class="row">
+      <div class="col-sm-10 mx-auto py-5">
+        <div class="row">
+          <div class="text-center">
+            <h2 class="text-pink fw-bold">
+              Matrimony Service with Millions of Success Stories
+            </h2>
+            <span class="divider">
+              <span><i class="fa-solid fa-heart text-pink"></i></span>
+            </span>
+          </div>
+          <div class="col-sm-12 pt-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card text-center bg-card shadow-lg">
+                  <img src="images/st1.jpg" class="rounded" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card shadow-lg">
+                  <img src="images/st2.jpg" class="rounded" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card shadow-lg">
+                  <img src="images/st3.jpg" class="rounded" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center bg-card shadow-lg">
+                  <img src="images/4.jpg" class="rounded" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Late Marriage Matrimony</h5>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- success story end -->
+
+    <!-- how it work -->
+    <div class="row bg-light py-4 mb-5">
+      <div class="text-center">
+        <h6 class="text-pink fs-1">About</h6>
+        <span class="divider">
+          <span><i class="fa-solid fa-heart text-pink"></i></span>
+        </span>
+      </div>
+      <div class="col-sm-10 mx-auto pt-2">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-justify fs-6">
+              In the Indian ethos of matchmaking, marriage is a sacred bond not
+              just between two individuals, but also an alliance of two families
+              that come together to share rituals, customs, festivities, duties
+              and responsibilities. In a country with such a vast array of
+              cultures and religions including Hindus, Punjabis, Aggarwals, Jains,
+              Baniyas, Sikhs, Brahmins, Jains, Marwaris, Rajputs, Muslims,
+              Christians and various other castes, a profound knowledge of their
+              customs and traditions is paramount for carrying out the requisite
+              partner search. <br> <br> We, at Wedgate Matrimony, with our team of in house
+              dedicated Marriage Counsellors and Relationship Managers, with years
+              of expertise and patience in dealing with a cross section of
+              society, are your gateway to that perfect partner that you envisage
+              for yourself or your dear child, friend, relative, niece, nephew,
+              grandchild, etc. Be it in any corner of the world, we have just that
+              magical profile that will transform your life and relationship
+              status, forever!<br> <br> So, if it’s marriage on your mind, the only gate
+              that you need to enter is WEDGATE to make your dream companion, a
+              flesh and blood reality in person. Welcome to Wedgate Matrimony.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- how it work end -->
+
+    <!-- footer  start -->
+    <div class="row bg-dark">
+      <div class="col-sm-10 mx-auto py-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="images/logo (1).png" alt="footer-img" class="img-fluid" />
+            <p class="text-secondary text-center">
+              A decade old matrimonial company in Delhi focused to provide
+              most genuine & selectivity choosen mactches to every
+              individuals's preferences and suitablity
+            </p>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Important Links</h5>
+            <ul class="list-unstyled d-block">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>About
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Contact
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Other Links</h5>
+            <ul class="list-unstyled d-block">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>About
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Contact
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Supports</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="tel:7318345059" class="text-decoration-none text-secondary"><i class="fa-solid fa-phone"></i>
+                  +91 7318345059</a>
+                <br />
+                <a href="tel:9305314415" class="ps-3 text-decoration-none text-secondary">
+                  +91 9305314415</a>
+              </li>
+              <li>
+                <a href="mailto:parjapatikanhaiyalal339gmail.com " class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-envelope pe-1"></i>parjapatikanhaiyalal339gmail.com</a>
+              </li>
+              <li class="text-secondary pt-2">
+                <i class="fa-solid fa-location-dot pe-2"></i><span>I-7, Metro Pillar No 333, Najafgarh Road, Near Moti
+                  Nagar
+                  Metro Station, Kailash Park, New Delhi 110015 (Above Pind
+                  Balluchi Restaurant)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-sm-12 mx-auto bg-footer">
+        <div class="container">
+          <div class="col-sm-12">
+            <p class="text-center text-secondary fs-5 pt-3">
+              &copy;2024 Shadi Wala Matrimony and Event Services || All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- footer  end -->
+  </div>
+  <!-- outer end -->
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</html>

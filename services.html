@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.bundle.js"></script>
+
+  <link rel="shortcut icon" href="images/logo (1).png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- outer start -->
+  <div class="container-fluid bg-img2">
+    <!-- nav start -->
+    <div class="row sticky-top">
+      <div class="col-sm-12 p-0">
+        <nav class="my-nav navbar navbar-expand-lg menu">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo (1).png" alt="logo" class="img-fluid"
+                width="200px" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="col-sm-6 pt-2 pe-3">
+                <form class="form-group">
+                  <input type="search" class="form-control  text-light shadow-none" placeholder="Search" />
+                </form>
+              </div>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-light fw-bold fs-6" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" data-bs-toggle="modal" data-bs-target="#loginModal"
+                    data-bs-whatever="@getbootstrap">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light fw-bold fs-6" href="#" data-bs-toggle="modal"
+                    data-bs-target="#registerModal" data-bs-whatever="@getbootstrap">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- nav send -->
+
+    <!-- modal login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-card">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="text-center">
+            <img src="images/logo (1).png" alt="title" class="img-fluid pt-1" width="200" />
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="">
+                <label for="recipient-name" class="col-form-label">Moblie No./ Email ID</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Enter Moblie No./Email ID" />
+              </div>
+              <div class="mb-3">
+                <label for="imputpassword" class="col-form-label">Password</label>
+                <input type="text" class="form-control" id="inputpassword" placeholder="Enter Password" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-between">
+                <span><input type="checkbox" /> Stay Logged In</span>
+                <span><a href="#" class="text-decoration-none">Forget Password?</a></span>
+              </div>
+              <div class="mb-3 text-center">
+                <input type="button" value="Login" class="btn btn-dark w-50" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <span>New To Shaadi?
+                  <a href="#" class="text-decoration-none">Sign UP</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-card">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter User Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="gender" class="form-label">Gender</label>
+                <select name="" id="" class="form-control">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputemail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputemail" placeholder="Enter email" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputnumber" class="form-label">Phone No.</label>
+                <input type="number" class="form-control" id="inputnumber" placeholder="Enter Phone No." />
+              </div>
+              <div class="col-md-6">
+                <label for="inputpassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputpassword" placeholder="Enter Password" />
+              </div>
+              <div class="col-md-6">
+                <label for="confirmpassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Enter confirm Password" />
+              </div>
+              <label for="gender" class="form-label">Date Of Birth</label>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>2024</option>
+                  <option>2023</option>
+                  <option>2022</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                  <option>2005</option>
+                  <option>2004</option>
+                  <option>2003</option>
+                  <option>2002</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>JAN</option>
+                  <option>FEB</option>
+                  <option>MAR</option>
+                  <option>APR</option>
+                  <option>MAY</option>
+                  <option>JUN</option>
+                  <option>JUL</option>
+                  <option>AUG</option>
+                  <option>SEP</option>
+                  <option>OCT</option>
+                  <option>NOV</option>
+                  <option>DEC</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select name="" id="" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                </select>
+              </div>
+
+              <div class="mb-3 text-center">
+                <input type="button" value="Register" class="btn btn-dark w-50" />
+              </div>
+
+              <div class="mb-3 d-flex justify-content-center">
+                <span>Already Register
+                  <a href="#" class="text-decoration-none">Sign In</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal register end -->
+
+    <!-- reg start -->
+    <div class="row bg-contact">
+      <div class="col-sm-10 mx-auto">
+        <div class="text-center py-5">
+          <h1 class="text-light fw-bold text fs-1">Services</h1>
+          <span class="text-light fs-5"><a href="index.html" class="text-decoration-none text-light">Home</a>
+            || Services</span>
+        </div>
+      </div>
+    </div>
+    <!-- reg end -->
+
+    <!-- services start -->
+    <div class="row">
+      <div class="col-sm-10 mx-auto py-3">
+        <div class="row bg-light mb-3">
+          <div class="col-sm-3">
+            <div>
+              <img src="images/s1.jpg" alt="" class="img-fluid py-3 text-center" />
+            </div>
+          </div>
+          <div class="col-sm-9 pt-3">
+            <h3 class="text-pink ps-2">Wedgate Gold</h3>
+            <p class="text-justify fs-6 p-3">
+              We care about your needs & preferences! Our packages are
+              designed according to every individual’s budget expectations. To
+              serve people with every kind of budget expectations, we have
+              devised different packages each of which has its own inclusions
+              and levels of premium services.
+              <br />
+              <br />
+
+              <b>Wedgate Gold:</b> Our glittery gold optimizes on both
+              objectives – Economy & Quality of our services. Wedgate search
+              engine is powered with the steam of extensive experience of our
+              Team. We work on multifarious facets. Our Clients have the
+              facility of availing our exclusive Meeting Lounges.
+            </p>
+          </div>
+        </div>
+        <div class="row bg-light mb-3">
+          <div class="col-sm-9 pt-3">
+            <h3 class="text-pink ps-2">Wedgate Diamond</h3>
+            <p class="text-justify fs-6 p-3">
+              Like the expanse of a spectrum of light visible through a
+              Diamond this package covers a wide range of services. Alongwith
+              the increased time period, we try to go into deep search – like
+              astrology, religious beliefs, educational background, etc to
+              reach possible alliances. We also search on wider database on
+              additional platforms. We proactively work on your case with a
+              realistic approach. Level of our involvement is higher.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <img src="images/s2.jpg" alt="" class="img-fluid py-3 text-center" />
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light mb-3">
+          <div class="col-sm-3">
+            <div>
+              <img src="images/s3.jpg" alt="" class="img-fluid py-3 text-center" />
+            </div>
+          </div>
+          <div class="col-sm-9 pt-3">
+            <h3 class="text-pink ps-2">Wedgate Exclusive</h3>
+            <p class="text-justify fs-6 p-3">
+              Exclusivity which is the essence of success is imparted to every
+              case. Ever expanding prospect base is explored till a logical
+              conclusion is derived. Working on a much wider platform, we
+              tread with you on the rigorous journey of match finding and
+              reach out to maximum possible platforms. Under senior
+              associates, we drive these services considering all parameters
+              and platforms. We give extra attention to needed areas for
+              grooming, portfolio development, etc. under this category.
+            </p>
+          </div>
+        </div>
+        <div class="row bg-light mb-3">
+          <div class="col-sm-9 pt-3">
+            <h3 class="text-pink ps-2">Wedgate Elite</h3>
+            <p class="text-justify fs-6 p-3">
+              Wedgate system is customized to suit the preferences of our
+              every Elite Client. Their individual sensitivities are
+              delicately handled.
+              <br />
+              <br />
+
+              We have been helping elite business families, diplomats,
+              celebrities, business tycoons, political families and other
+              families of the like to find their ideal match for more than
+              decade now. Our vast network of experts and collaborators gives
+              us a clutch over the elite class either based-in, or with roots
+              in India. <br />
+              <br />
+
+              News associated with elite families can quickly become a gossip
+              if not handled properly. So we ensure to maintain such
+              operations exclusively discreet and confidential, unless the
+              bondage begins to blossom.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <img src="images/s4.jpg" alt="" class="img-fluid py-3 text-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services end -->
+
+
+    <!-- releted sercvices -->
+    <div class="row">
+      <div class="col-sm-10 mx-auto">
+        <div class="row">
+          <div class="text-center">
+            <h2 class="text-pink fw-bold">Related Services</h2>
+            <span class="divider">
+              <span><i class="fa-solid fa-heart text-pink"></i></span>
+            </span>
+          </div>
+
+
+          <div class="row row-cols-2 row-cols-md-4 g-4 pb-5">
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs1.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#"
+                      class="text-decoration-none text-dark fs-6 link">Punjabi Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs2.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">Sikh
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs3.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">Hindu
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs4.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">Jain
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs5.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">Elite
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs6.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">NRI
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs7.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6 link">Late
+                      Matrimonial Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs8.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#"
+                      class="text-decoration-none text-dark fs-6 link">Re-marriage Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs9.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#"
+                      class="text-decoration-none text-dark fs-6 link">Pre-Wedding Dietician Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs10.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#"
+                      class="text-decoration-none text-dark fs-6 link">Wedding Photography</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs11.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark fs-6">Wedding
+                      Events Services</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0  bg-transparent">
+                <img src="images/rs12.jpg" class="img-fluid" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <h5 class="card-title text-center"><a href="#"
+                      class="text-decoration-none text-dark fs-6 link">Aggarwal | Gupta | Baniya Matrimonial
+                      Services</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- releted sercvices end -->
+
+    <!-- footer  start -->
+    <div class="row bg-dark">
+      <div class="col-sm-10 mx-auto py-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="images/logo (1).png" alt="footer-img" class="img-fluid" />
+            <p class="text-secondary text-center">
+              A decade old matrimonial company in Delhi focused to provide
+              most genuine & selectivity choosen mactches to every
+              individuals's preferences and suitablity
+            </p>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Important Links</h5>
+            <ul class="list-unstyled d-block">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>About
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Contact
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Other Links</h5>
+            <ul class="list-unstyled d-block">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>About
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i class="fa-solid fa-angles-right"></i>Contact
+                  US</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-angles-right"></i>Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3 p-4">
+            <h5 class="text-light">Supports</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="tel:7318345059" class="text-decoration-none text-secondary"><i class="fa-solid fa-phone"></i>
+                  +91 7318345059</a>
+                <br />
+                <a href="tel:9305314415" class="ps-3 text-decoration-none text-secondary">
+                  +91 9305314415</a>
+              </li>
+              <li>
+                <a href="mailto:parjapatikanhaiyalal339gmail.com " class="text-decoration-none text-secondary"><i
+                    class="fa-solid fa-envelope pe-1"></i>parjapatikanhaiyalal339gmail.com</a>
+              </li>
+              <li class="text-secondary pt-2">
+                <i class="fa-solid fa-location-dot pe-2"></i><span>I-7, Metro Pillar No 333, Najafgarh Road, Near Moti
+                  Nagar
+                  Metro Station, Kailash Park, New Delhi 110015 (Above Pind
+                  Balluchi Restaurant)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-sm-12 mx-auto bg-footer">
+        <div class="container">
+          <div class="col-sm-12">
+            <p class="text-center text-secondary fs-5 pt-3">
+              &copy;2024 Shadi Wala Matrimony and Event Services || All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  end -->
+  </div>
+  <!-- outer end -->
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</html>
